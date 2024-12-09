@@ -63,10 +63,10 @@ namespace ImportData.IntegrationServicesClient.Models
     [PropertyOptions("Подготовил", RequiredType.Required, PropertyType.Entity, AdditionalCharacters.ForSearch)]
     public IEmployees PreparedBy { get; set; }
 
-    [PropertyOptions("Дело", RequiredType.Required, PropertyType.Entity, AdditionalCharacters.ForSearch)]
+    [PropertyOptions("Дело", RequiredType.NotRequired, PropertyType.Entity, AdditionalCharacters.ForSearch)]
     public ICaseFiles CaseFile { get; set; }
 
-    [PropertyOptions("Дата помещения", RequiredType.Required, PropertyType.Simple, AdditionalCharacters.ForSearch)]
+    [PropertyOptions("Дата помещения", RequiredType.NotRequired, PropertyType.Simple, AdditionalCharacters.ForSearch)]
     public DateTimeOffset? PlacedToCaseFileDate
     {
       get { return placedToCaseFileDate; }
