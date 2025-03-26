@@ -14,7 +14,7 @@ namespace Tests
         public const string Login = "Administrator";
         public const string Password = "11111";
         public const string XlsxFolderPath = "Templates";
-
+       
         public const string CompanyPathXlsx = $@"{XlsxFolderPath}\Company.xlsx";
         public const string CompaniesPathXlsx = $@"{XlsxFolderPath}\Companies.xlsx";
         public const string PersonsPathXlsx = $@"{XlsxFolderPath}\Persons.xlsx";
@@ -29,5 +29,7 @@ namespace Tests
         public const string OutgoingLettersAddresseesPathXlsx = $@"{XlsxFolderPath}\OutgoingLettersAddressees.xlsx";
         public const string OrdersPathXlsx = $@"{XlsxFolderPath}\Orders.xlsx";
         public const string CompanyDirectivesPathXlsx = $@"{XlsxFolderPath}\CompanyDirectives.xlsx";
+        public const string SimpleDocumentPathXlsx = $@"{XlsxFolderPath}\SimpleDocument.xlsx";
+
     }
 }
