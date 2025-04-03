@@ -19,6 +19,6 @@ Page instfiles
 
 Section "Components"
  SetOutPath $INSTDIR
- File /r "..\src\ImportData\bin\Debug\netcoreapp3.0\*.*" 
+ File /r "..\src\ImportData\bin\Debug\net6.0\*.*" 
 SectionEnd
 

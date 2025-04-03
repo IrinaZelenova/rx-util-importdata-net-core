@@ -120,9 +120,8 @@ namespace ImportData
 
     public static void Main(string[] args)
     {
-            //args = new[] { "-n", "Administrator", "-p", "11111", "-a", "importcontacts", "-f", $@"D:\Contacts.xlsx" };
 
-            logger.Info("=========================== Process Start ===========================");
+      logger.Info("=========================== Process Start ===========================");
       var watch = System.Diagnostics.Stopwatch.StartNew();
 
       #region Обработка параметров.
