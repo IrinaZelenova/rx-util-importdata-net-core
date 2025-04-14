@@ -119,6 +119,8 @@ namespace ImportData
           break;
         case "importcontractstatement":
           EntityProcessor.Process(typeof(ContractStatement), xlsxPath, Constants.SheetNames.ContractStatement, extraParameters, ignoreDuplicates, isBatch, logger);
+        case "importsimpledocument":
+          EntityProcessor.Process(typeof(SimpleDocument), xlsxPath, Constants.SheetNames.SimpleDocument, extraParameters, ignoreDuplicates, isBatch, logger);
           break;
         default:
           break;
@@ -127,7 +129,7 @@ namespace ImportData
 
     public static void Main(string[] args)
     {
-      //args = new[] { "-n", "Administrator", "-p", "11111", "-a", "importcontacts", "-f", $@"D:\Contacts.xlsx" };
+
       logger.Info("=========================== Process Start ===========================");
       var watch = System.Diagnostics.Stopwatch.StartNew();
 

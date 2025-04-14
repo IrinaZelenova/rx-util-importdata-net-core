@@ -152,6 +152,7 @@ namespace ImportData
       public const string Waybill = "Накладные";
       public const string UTD = "УПД";
       public const string ContractStatement = "Акты";
+      public const string SimpleDocument = "ПростойДокумент";
     }
 
     public class Actions
@@ -183,6 +184,7 @@ namespace ImportData
       public const string ImportWaybills = "importwaybills";
       public const string ImportUTD = "importutd";
       public const string ImportContractStatement = "importcontractstatement";
+      public const string ImportSimpleDocument = "importsimpledocument";
 
       // Инициализация клиента, для тестов.
       public const string InitForTests = "init";
@@ -216,6 +218,7 @@ namespace ImportData
                 {ImportWaybills, ImportWaybills},
                 {ImportUTD, ImportUTD},
                 {ImportContractStatement, ImportContractStatement},
+                {ImportSimpleDocument, ImportSimpleDocument},
 
                 // Инициализация клиента, для тестов.
                 {InitForTests, InitForTests}
