@@ -119,10 +119,15 @@ namespace ImportData
           break;
         case "importcontractstatement":
           EntityProcessor.Process(typeof(ContractStatement), xlsxPath, Constants.SheetNames.ContractStatement, extraParameters, ignoreDuplicates, isBatch, logger);
+            break;
         case "importsimpledocument":
           EntityProcessor.Process(typeof(SimpleDocument), xlsxPath, Constants.SheetNames.SimpleDocument, extraParameters, ignoreDuplicates, isBatch, logger);
           break;
-        default:
+                case "importсontractsкesource":
+                    EntityProcessor.Process(typeof(ContractResource), xlsxPath, Constants.SheetNames.ContractsResource, extraParameters, ignoreDuplicates, isBatch, logger);
+                    break;
+
+                default:
           break;
       }
     }
