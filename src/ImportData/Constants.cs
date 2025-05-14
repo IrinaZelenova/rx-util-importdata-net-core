@@ -153,8 +153,7 @@ namespace ImportData
       public const string UTD = "УПД";
       public const string ContractStatement = "Акты";
       public const string SimpleDocument = "ПростойДокумент";
-      public const string ContractsResource = "Ресурсные договоры";
-        }
+    }
 
     public class Actions
     {
@@ -186,10 +185,9 @@ namespace ImportData
       public const string ImportUTD = "importutd";
       public const string ImportContractStatement = "importcontractstatement";
       public const string ImportSimpleDocument = "importsimpledocument";
-      public const string ImportContractsResource = "importсontractsкesource";
 
-            // Инициализация клиента, для тестов.
-            public const string InitForTests = "init";
+      // Инициализация клиента, для тестов.
+      public const string InitForTests = "init";
 
       public static Dictionary<string, string> dictActions = new Dictionary<string, string>
             {
@@ -221,7 +219,6 @@ namespace ImportData
                 {ImportUTD, ImportUTD},
                 {ImportContractStatement, ImportContractStatement},
                 {ImportSimpleDocument, ImportSimpleDocument},
-                {ImportContractsResource, ImportContractsResource},          
 
                 // Инициализация клиента, для тестов.
                 {InitForTests, InitForTests}
