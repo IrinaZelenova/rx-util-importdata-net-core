@@ -107,7 +107,8 @@ namespace ImportData
       public const string Extension = "Extension";
       public const string DocumentKinds = "DocumentKinds";
       public const string RecipientLinks = "RecipientLinks";
-    }
+      public const string DataCenter = "DataCenter";
+        }
 
     public static Dictionary<string, string> AttributeValue = new Dictionary<string, string>
       {
@@ -153,7 +154,8 @@ namespace ImportData
       public const string UTD = "УПД";
       public const string ContractStatement = "Акты";
       public const string SimpleDocument = "ПростойДокумент";
-    }
+      public const string ContractResourceAllocation = "Договоры размещения ресурсов";
+        }
 
     public class Actions
     {
@@ -185,9 +187,10 @@ namespace ImportData
       public const string ImportUTD = "importutd";
       public const string ImportContractStatement = "importcontractstatement";
       public const string ImportSimpleDocument = "importsimpledocument";
+            public const string ImportContractsResourceAllocation = "importcontractresourceallocation";
 
-      // Инициализация клиента, для тестов.
-      public const string InitForTests = "init";
+            // Инициализация клиента, для тестов.
+            public const string InitForTests = "init";
 
       public static Dictionary<string, string> dictActions = new Dictionary<string, string>
             {
@@ -219,6 +222,7 @@ namespace ImportData
                 {ImportUTD, ImportUTD},
                 {ImportContractStatement, ImportContractStatement},
                 {ImportSimpleDocument, ImportSimpleDocument},
+                 {ImportContractsResourceAllocation, ImportContractsResourceAllocation},
 
                 // Инициализация клиента, для тестов.
                 {InitForTests, InitForTests}
